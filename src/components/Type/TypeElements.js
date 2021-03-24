@@ -52,7 +52,6 @@ export const TypeBox = styled.div `
  padding: 20px 30px;
  margin: 20px;
  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
- transition: all 0.2s ease-in-out;
  transform: scale(1.02);
 transition: all 0.2s ease-in-out;
 `;

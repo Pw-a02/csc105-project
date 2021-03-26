@@ -6,8 +6,8 @@
 }
 
 .Compare-content {
-  width: 500px;
-  height: 600px;
+  width: 550px;
+  height: 900px;
   border: none;
   box-shadow: 0 1px 3px rgb(187, 187, 187);
   border-radius: 16px;
@@ -16,6 +16,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  margin-top: 60px;
 }
 
 .Compare-container1 {
@@ -55,8 +56,8 @@ img {
   height: 40px;
   border: none;
   border-radius: 12px;
-  margin-bottom: -70px;
-  margin-top: 20px;
+  /* margin-bottom: -70px;
+  margin-top: 20px; */
   background-color: white;
   box-shadow: 0 1px 3px rgb(187, 187, 187);
 }
@@ -67,11 +68,17 @@ img {
 }
 
 .compare-btn {
-  margin-left: 130px;
+  display: flex;
+  margin-bottom: 20px;
 }
 
 h1 {
   color: #4f3f84;
   display: flex;
   justify-content: center;
+}
+
+.mapp {
+  width: 400px;
+  height: 200px;
 }

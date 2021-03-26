@@ -1,5 +1,7 @@
 // import styled from 'styled-components';
 
+import { Height } from "@material-ui/icons";
+
 // export const CompareContainer = styled.div `
 //  width: 100%;
 //  height: 900px;
@@ -187,3 +189,8 @@
 // border-radius: 4px;
 // background: rgb(253, 253, 139);
 // `;
+
+export const mapStyles = {
+  width: `100%`,
+  height: `100%`,
+};

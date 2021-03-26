@@ -3,26 +3,7 @@ import com1 from "../../images/comparehotel.jpg";
 import com2 from "../../images/comparehotel1.jpg";
 import { Link } from "react-router-dom";
 import "./compare.css";
-import {
-  CompareContainer,
-  CompareContainer1,
-  CompareContainer2,
-  CompareLeftSide,
-  CompareLeft1,
-  CompareH2,
-  CompareImage,
-  CompareLeft2,
-  CompareMapH2,
-  CompareMap,
-  CompareRightSide,
-  CompareRight1,
-  CompareBox1,
-  CompareBox2,
-  CompareButton,
-  CompareRight2,
-  CompareNearH2,
-  CompareNear,
-} from "./CompareElements";
+import Map from "./api";
 
 const Compare = () => {
   return (
@@ -37,11 +18,14 @@ const Compare = () => {
             <label for="detail">Detail: </label>
             <div></div>
             <label for="option">Option: </label>
-            <div className="compare-btn">
-              <Link to="/booking">
-                <button>Booking</button>
-              </Link>
-            </div>
+          </div>
+          <div className="mapp">
+            <Map />
+          </div>
+          <div className="compare-btn">
+            <Link to="/booking">
+              <button>Booking</button>
+            </Link>
           </div>
         </div>
       </div>
@@ -55,11 +39,14 @@ const Compare = () => {
             <label for="detail">Detail: </label>
             <div></div>
             <label for="option">Option: </label>
-            <div className="compare-btn">
-              <Link to="/booking">
-                <button>Booking</button>
-              </Link>
-            </div>
+          </div>
+          <div className="mapp">
+            <Map />
+          </div>
+          <div className="compare-btn">
+            <Link to="/booking">
+              <button>Booking</button>
+            </Link>
           </div>
         </div>
       </div>

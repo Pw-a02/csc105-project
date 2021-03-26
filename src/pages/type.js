@@ -1,14 +1,13 @@
-import React from 'react'
-import Type from '../components/Type';
-import Navbar from '../components/Navbar';
+import React from "react";
+import Type from "../components/Type";
+import Navbar from "../components/Navbar";
 
 const TypePage = () => {
-    return (
-        <>
-            <Navbar />
-            <Type />
-        </>
-    )
-}
+	return (
+		<>
+			<Type />
+		</>
+	);
+};
 
-export default TypePage
+export default TypePage;

@@ -1,0 +1,114 @@
+.ServicesContainer {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding-bottom: 20px;
+  font-size: 2rem;
+  color: #0077ff;
+}
+
+@media screen and (max-width: 480px) {
+  .ServicesContainer {
+    font-size: 2rem;
+    height: 1300px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .ServicesContainer {
+    height: 800px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ServicesContainer {
+    height: 1100px;
+  }
+  .ServicesWrapper {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+}
+
+.ServicesWrapper {
+  max-width: 1000px;
+  margin: 50px 10px 0 0;
+
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  grid-gap: 16px;
+  padding: 0 80px;
+}
+
+@media screen and (max-width: 1000px) {
+  .ServicesWrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.ServicesCard {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  width: 300px;
+  height: 280px;
+  padding: 20px 30px;
+  margin: 20px;
+  box-shadow: 0 1px 3px rgb(187, 187, 187);
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.02);
+}
+
+img {
+  height: 170px;
+  width: 270px;
+  margin-bottom: -20px;
+  /* object-fit: contain; */
+  border-radius: 6px;
+}
+
+h2 {
+  margin-top: -10px;
+  color: black;
+  font-size: 16px;
+}
+
+/* .ServicesH2{
+  font-size: 1rem;
+  margin-bottom: 10px;
+  margin-top: -70px;
+} */
+
+/* .servicebtn {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  margin-top: -20px;
+} */
+
+.servicebtn button {
+  font-size: 1rem;
+  text-align: center;
+  background-color: #fff;
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 12px;
+  margin-bottom: -70px;
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgb(187, 187, 187);
+}
+
+.servicebtn button:hover {
+  background-color: #ff9a10;
+  color: white;
+}

@@ -1,0 +1,10 @@
+#booking {
+	padding: 24px;
+}
+
+.MuiButtonGroup-groupedContainedPrimary {
+	border-color: #303f9f !important;
+}
+.MuiButtonGroup-groupedContainedPrimary:not(:last-child) {
+	border-right: none !important;
+}

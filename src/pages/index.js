@@ -1,16 +1,15 @@
-import React from 'react'
-import Navbar from '../components/Navbar';
-import Hero from '../components/Hero';
-import Services from '../components/Services';
+import React from "react";
+import Navbar from "../components/Navbar";
+import HeroSection from "../components/HeroSection";
+import ServiceSection from "../components/ServiceSection";
 
 const Home = () => {
-    return (
-        <>
-            <Navbar />
-            <Hero />
-            <Services />
-        </>
-    )
-}
+	return (
+		<>
+			<HeroSection />
+			<ServiceSection />
+		</>
+	);
+};
 
-export default Home
+export default Home;

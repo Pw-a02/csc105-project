@@ -75,7 +75,7 @@ export const TypeImage = styled.img`
   height: 170px;
   width: 270px;
   position: relative;
-  margin-top: 2px;
+  margin-top: 8px;
   border-radius: 6px;
   //  object-fit: contain;
 `;
@@ -127,7 +127,7 @@ export const TypeButton = styled.button`
   background-color: white;
   box-shadow: 0 1px 3px rgb(187, 187, 187);
   border-radius: 8px;
-  margin-bottom: -90px;
+  margin-bottom: -80px;
 
   &:hover {
     background-color: #ff9a10;

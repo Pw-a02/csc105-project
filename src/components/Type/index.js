@@ -48,7 +48,7 @@ const Type = () => {
         <TypeWrapper>
           <TypeCard img={Type7} price={99} book={() => {}} />
           <TypeCard img={Type8} price={99} book={() => {}} />
-          <TypeCard img={Type9} price={99} book={() => {}} />\
+          <TypeCard img={Type9} price={99} book={() => {}} />
         </TypeWrapper>
       </TypeContainer3>
     </>

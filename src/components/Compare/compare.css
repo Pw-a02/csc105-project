@@ -1,0 +1,77 @@
+.Compare-container {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+}
+
+.Compare-content {
+  width: 500px;
+  height: 600px;
+  border: none;
+  box-shadow: 0 1px 3px rgb(187, 187, 187);
+  border-radius: 16px;
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Compare-container1 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Compare-container2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  margin-top: -15px;
+}
+
+img {
+  width: 400px;
+  height: 350px;
+}
+.Compare-form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.compare-btn button {
+  font-size: 1rem;
+  text-align: center;
+  background-color: #fff;
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 12px;
+  margin-bottom: -70px;
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 0 1px 3px rgb(187, 187, 187);
+}
+
+.compare-btn button:hover {
+  background-color: #ff9a10;
+  color: white;
+}
+
+.compare-btn {
+  margin-left: 130px;
+}
+
+h1 {
+  color: #4f3f84;
+  display: flex;
+  justify-content: center;
+}

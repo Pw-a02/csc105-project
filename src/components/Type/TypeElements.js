@@ -53,6 +53,10 @@ export const TypeBox = styled.div`
   transition: all 0.2s ease-in-out;
   transform: scale(1.02);
   transition: all 0.2s ease-in-out;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 10px;
+  }
 `;
 
 export const TypeText = styled.div`
@@ -78,7 +82,7 @@ export const TypeImage = styled.img`
 
 export const TypeH1 = styled.h1`
   font-size: 2.5rem;
-  color: #4f3f84;
+  color: #303f9f;
   margin-bottom: 64px;
 
   @media screen and (max-width: 480px) {
@@ -89,7 +93,7 @@ export const TypeH1 = styled.h1`
 
 export const TypeH1a = styled.h1`
   font-size: 2.5rem;
-  color: #0077ff;
+  color: #303f9f;
   margin-bottom: 64px;
 
   @media screen and (max-width: 480px) {
@@ -100,7 +104,7 @@ export const TypeH1a = styled.h1`
 
 export const TypeH1b = styled.h1`
   font-size: 2.5rem;
-  color: #fea735;
+  color: #303f9f;
   margin-bottom: 64px;
 
   @media screen and (max-width: 480px) {

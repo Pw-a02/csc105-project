@@ -67,7 +67,7 @@
   transform: scale(1.02);
 }
 
-img {
+.ServicesCard img {
   height: 170px;
   width: 270px;
   margin-bottom: -20px;

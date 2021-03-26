@@ -1,60 +1,70 @@
-import React from 'react'
-import Book1 from '../../images/book1.jpg';
-import {CompareContainer, CompareContainer1, CompareContainer2, CompareLeftSide, CompareLeft1, CompareH2, CompareImage, CompareLeft2, 
-    CompareMapH2, CompareMap, CompareRightSide, CompareRight1, CompareBox1, CompareBox2, CompareButton, 
-    CompareRight2, CompareNearH2, CompareNear} from './CompareElements';
+import React from "react";
+import com1 from "../../images/comparehotel.jpg";
+import com2 from "../../images/comparehotel1.jpg";
+import { Link } from "react-router-dom";
+import "./compare.css";
+import {
+  CompareContainer,
+  CompareContainer1,
+  CompareContainer2,
+  CompareLeftSide,
+  CompareLeft1,
+  CompareH2,
+  CompareImage,
+  CompareLeft2,
+  CompareMapH2,
+  CompareMap,
+  CompareRightSide,
+  CompareRight1,
+  CompareBox1,
+  CompareBox2,
+  CompareButton,
+  CompareRight2,
+  CompareNearH2,
+  CompareNear,
+} from "./CompareElements";
 
 const Compare = () => {
-    return (
-        <CompareContainer>
-          <CompareContainer1 id="booking">
-            <CompareLeftSide>
-                <CompareLeft1>
-                    <CompareH2>Hotel Name</CompareH2>
-                    <CompareImage src={Book1} />
-                </CompareLeft1>
-                <CompareLeft2>
-                    <CompareBox1 />
-                    <CompareBox2 />
-                    <CompareButton>Book</CompareButton>
-                </CompareLeft2>
-            </CompareLeftSide>
-            <CompareRightSide>
-                <CompareRight1>
-                    <CompareMapH2>How to get here.</CompareMapH2>
-                    <CompareMap />
-                </CompareRight1>
-                <CompareRight2>
-                    <CompareNearH2>Nearby</CompareNearH2>
-                    <CompareNear />
-                </CompareRight2>
-            </CompareRightSide>
-        </CompareContainer1>
-        <CompareContainer2 id="booking">
-            <CompareLeftSide>
-                <CompareLeft1>
-                    <CompareH2>Hotel Name</CompareH2>
-                    <CompareImage src={Book1} />
-                </CompareLeft1>
-                <CompareLeft2>
-                    <CompareBox1 />
-                    <CompareBox2 />
-                    <CompareButton>Book</CompareButton>
-                </CompareLeft2>
-            </CompareLeftSide>
-            <CompareRightSide>
-                <CompareRight1>
-                    <CompareMapH2>How to get here.</CompareMapH2>
-                    <CompareMap />
-                </CompareRight1>
-                <CompareRight2>
-                    <CompareNearH2>Nearby</CompareNearH2>
-                    <CompareNear />
-                </CompareRight2>
-            </CompareRightSide>
-        </CompareContainer2>    
-        </CompareContainer>
-    )
-}
+  return (
+    <div className="Compare-container">
+      <div className="Compare-container1">
+        <div className="Compare-content">
+          <h2>Hotel name</h2>
+          <img src={com1} />
+          <div className="Compare-form">
+            <label for="price">Price: </label>
+            <div></div>
+            <label for="detail">Detail: </label>
+            <div></div>
+            <label for="option">Option: </label>
+            <div className="compare-btn">
+              <Link to="/booking">
+                <button>Booking</button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="Compare-container2">
+        <div className="Compare-content">
+          <h2>Hotel name</h2>
+          <img src={com2} />
+          <div className="Compare-form">
+            <label for="price">Price: </label>
+            <div></div>
+            <label for="detail">Detail: </label>
+            <div></div>
+            <label for="option">Option: </label>
+            <div className="compare-btn">
+              <Link to="/booking">
+                <button>Booking</button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default Compare
+export default Compare;

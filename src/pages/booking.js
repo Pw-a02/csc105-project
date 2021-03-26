@@ -1,14 +1,13 @@
-import React from 'react'
-import Booking from '../components/Booking';
-import Navbar  from '../components/Navbar';
+import React from "react";
+import Booking from "../components/Booking";
+import Navbar from "../components/Navbar";
 
 const BookingPage = () => {
-    return (
-        <>
-            <Navbar />
-            <Booking />
-        </>
-    )
-}
+  return (
+    <>
+      <Booking />
+    </>
+  );
+};
 
-export default BookingPage
+export default BookingPage;

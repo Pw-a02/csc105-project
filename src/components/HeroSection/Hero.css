@@ -182,3 +182,7 @@ img {
   background-color: #ff9a10;
   color: white;
 }
+
+.contain-text h1 {
+  color: black;
+}

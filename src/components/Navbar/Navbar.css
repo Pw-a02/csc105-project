@@ -32,6 +32,10 @@
   margin-left: 30px;
 }
 
+.Navbar .leftside .link a:hover {
+  color: #0077ff;
+}
+
 .Navbar .leftside button {
   display: none;
   margin-left: 20px;

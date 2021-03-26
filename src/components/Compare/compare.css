@@ -3,6 +3,7 @@
   height: 900px;
   display: flex;
   justify-content: center;
+  margin-top: 60px;
 }
 
 .Compare-content {
@@ -16,7 +17,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 
 .Compare-container1 {
@@ -34,7 +35,7 @@
 }
 
 h2 {
-  margin-top: -15px;
+  margin-top: -10px;
 }
 
 img {
@@ -65,6 +66,7 @@ img {
 .compare-btn button:hover {
   background-color: #ff9a10;
   color: white;
+  cursor: pointer;
 }
 
 .compare-btn {

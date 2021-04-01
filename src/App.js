@@ -6,6 +6,7 @@ import TypePage from "./pages/type";
 import Booking from "./pages/booking";
 import Navbar from "./components/Navbar";
 import Compare from "./pages/compare";
+import DetailPage from "./pages/details";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/type" component={TypePage} exact />
         <Route path="/booking" component={Booking} exact />
         <Route path="/compare" component={Compare} exact />
+        <Route path="/detail" component={DetailPage} exact />
       </Switch>
     </Router>
   );

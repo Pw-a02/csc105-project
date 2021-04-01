@@ -30,25 +30,25 @@ const Type = () => {
       <TypeContainer id="type">
         <TypeH1>Hotel</TypeH1>
         <TypeWrapper>
-          <TypeCard img={Type1} price={99} book={() => {}} />
-          <TypeCard img={Type2} price={99} book={() => {}} />
-          <TypeCard img={Type3} price={99} book={() => {}} />
+          <TypeCard img={Type1} price={999} book={() => {}} />
+          <TypeCard img={Type2} price={999} book={() => {}} />
+          <TypeCard img={Type3} price={999} book={() => {}} />
         </TypeWrapper>
       </TypeContainer>
       <TypeContainer2 id="type">
         <TypeH1a>Hostel</TypeH1a>
         <TypeWrapper>
-          <TypeCard img={Type4} price={99} book={() => {}} />
-          <TypeCard img={Type5} price={99} book={() => {}} />
-          <TypeCard img={Type6} price={99} book={() => {}} />
+          <TypeCard img={Type4} price={999} book={() => {}} />
+          <TypeCard img={Type5} price={999} book={() => {}} />
+          <TypeCard img={Type6} price={999} book={() => {}} />
         </TypeWrapper>
       </TypeContainer2>
       <TypeContainer3 id="type">
         <TypeH1b>Resort</TypeH1b>
         <TypeWrapper>
-          <TypeCard img={Type7} price={99} book={() => {}} />
-          <TypeCard img={Type8} price={99} book={() => {}} />
-          <TypeCard img={Type9} price={99} book={() => {}} />
+          <TypeCard img={Type7} price={999} book={() => {}} />
+          <TypeCard img={Type8} price={999} book={() => {}} />
+          <TypeCard img={Type9} price={999} book={() => {}} />
         </TypeWrapper>
       </TypeContainer3>
     </>

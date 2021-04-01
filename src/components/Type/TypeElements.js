@@ -68,14 +68,14 @@ export const TypeText = styled.div`
   width: 150px;
   height: 60px;
   padding: 10px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 `;
 
 export const TypeImage = styled.img`
   height: 170px;
   width: 270px;
-  position: relative;
-  margin-top: 8px;
+  position: sticky;
+  margin-top: 50px;
   border-radius: 6px;
   //  object-fit: contain;
 `;
@@ -115,19 +115,19 @@ export const TypeH1b = styled.h1`
 
 export const TypeH2 = styled.h2`
   font-size: 14px;
-  margin-bottom: 8px;
+  margin-bottom: 0px;
 `;
 
 export const TypeButton = styled.button`
   font-size: 1rem;
   text-align: center;
-  width: 80px;
+  width: 140px;
   height: 40px;
   border: none;
   background-color: white;
   box-shadow: 0 1px 3px rgb(187, 187, 187);
-  border-radius: 8px;
-  margin-bottom: -80px;
+  border-radius: 16px;
+  margin-bottom: -90px;
 
   &:hover {
     background-color: #ff9a10;

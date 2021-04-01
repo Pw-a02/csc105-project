@@ -4,51 +4,28 @@ import com2 from "../../images/comparehotel1.jpg";
 import { Link } from "react-router-dom";
 import "./compare.css";
 import Map from "./api";
+import CompareContent from "./compare";
 
 const Compare = () => {
   return (
     <div className="Compare-container">
       <div className="Compare-container1">
-        <div className="Compare-content">
-          <h2>Hotel name</h2>
-          <img src={com1} />
-          <div className="Compare-form">
-            <label for="price">Price: </label>
-            <div></div>
-            <label for="detail">Detail: </label>
-            <div></div>
-            <label for="option">Option: </label>
-          </div>
-          <div className="mapp">
-            <Map />
-          </div>
-          <div className="compare-btn">
-            <Link to="/booking">
-              <button>Booking</button>
-            </Link>
-          </div>
-        </div>
+        <CompareContent
+          name="Novotel"
+          img={com1}
+          price={999}
+          detail="available"
+          option="include breakfast"
+        />
       </div>
       <div className="Compare-container2">
-        <div className="Compare-content">
-          <h2>Hotel name</h2>
-          <img src={com2} />
-          <div className="Compare-form">
-            <label for="price">Price: </label>
-            <div></div>
-            <label for="detail">Detail: </label>
-            <div></div>
-            <label for="option">Option: </label>
-          </div>
-          <div className="mapp">
-            <Map />
-          </div>
-          <div className="compare-btn">
-            <Link to="/booking">
-              <button>Booking</button>
-            </Link>
-          </div>
-        </div>
+        <CompareContent
+          name="Novotel"
+          img={com2}
+          price={999}
+          detail="available"
+          option="include breakfast"
+        />
       </div>
     </div>
   );

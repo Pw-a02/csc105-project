@@ -20,7 +20,7 @@ function Navbar() {
         </button>
       </div>
       <div className="rightside">
-        <input type="text" placeholder="Search..." />
+        <input type="text" placeholder="location..." />
         <button>
           <SearchIcon />
         </button>

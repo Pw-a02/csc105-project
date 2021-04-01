@@ -18,7 +18,7 @@ function Hero() {
             <h1 class="s">to stay with us!</h1>
           </div>
         </div>
-        <div className="hero-btns">
+        {/* <div className="hero-btns">
           <Link to="/booking">
             <button
               className="btns"
@@ -28,7 +28,7 @@ function Hero() {
               Booking
             </button>
           </Link>
-        </div>
+        </div> */}
       </div>
     </>
   );

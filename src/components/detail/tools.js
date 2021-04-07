@@ -23,7 +23,7 @@ export default function SimpleTooltips() {
 
   return (
     <div>
-      <Tooltip title="Delete">
+      <Tooltip title="save">
         <IconButton aria-label="delete">
           <FavoriteBorderIcon />
         </IconButton>

@@ -7,6 +7,7 @@ import Booking from "./pages/booking";
 import Navbar from "./components/Navbar";
 import Compare from "./pages/compare";
 import DetailPage from "./pages/details";
+import StyledPage from "./pages/styled";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/booking" component={Booking} exact />
         <Route path="/compare" component={Compare} exact />
         <Route path="/detail" component={DetailPage} exact />
+        <Route path="/styled" component={StyledPage} exact />
       </Switch>
     </Router>
   );

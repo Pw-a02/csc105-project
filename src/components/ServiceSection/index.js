@@ -48,25 +48,25 @@ const ServiceSection = () => {
         <h2>Select your style</h2>
         <div className="style-box">
           <div className="style1">
-            <Link to="/styled">
+            <Link to="/kind">
               <img src={pic1} />
             </Link>
             <p>Hotel</p>
           </div>
           <div className="style2">
-            <Link to="/">
+            <Link to="/hostel">
               <img src={pic2} />
             </Link>
             <p>Hostel</p>
           </div>
           <div className="style3">
-            <Link to="/">
+            <Link to="/apartment">
               <img src={pic3} />
             </Link>
             <p>Apartment</p>
           </div>
           <div className="style4">
-            <Link to="/">
+            <Link to="/resort">
               <img src={pic4} />
             </Link>
             <p>Resort</p>

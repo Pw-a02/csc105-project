@@ -1,10 +1,10 @@
 import React from "react";
-import Styled from "../components/Styled";
+import Kind from "../components/KindSection";
 
 const StyledPage = () => {
   return (
     <>
-      <Styled />
+      <Kind />
     </>
   );
 };

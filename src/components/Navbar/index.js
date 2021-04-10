@@ -10,8 +10,8 @@ function Navbar() {
       <div className="leftside">
         <div className="link" id={showLink ? "hidden" : ""}>
           <a href="/">Home</a>
-          <a href="/type">Type</a>
-          <a href="/booking">Booking</a>
+          {/* <a href="/type">Type</a>
+          <a href="/booking">Booking</a> */}
           <a href="/compare">Compare</a>
           <a href="/account">Sign in</a>
         </div>

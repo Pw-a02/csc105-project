@@ -7,7 +7,11 @@ import Booking from "./pages/booking";
 import Navbar from "./components/Navbar";
 import Compare from "./pages/compare";
 import DetailPage from "./pages/details";
-import StyledPage from "./pages/styled";
+import KindPage from "./pages/kind";
+import HostelPage from "./pages/hostel";
+import ApartmentPage from "./pages/apartment";
+import ResortContent from "./pages/resort";
+import ResortPage from "./pages/resort";
 
 function App() {
   return (
@@ -20,7 +24,10 @@ function App() {
         <Route path="/booking" component={Booking} exact />
         <Route path="/compare" component={Compare} exact />
         <Route path="/detail" component={DetailPage} exact />
-        <Route path="/styled" component={StyledPage} exact />
+        <Route path="/kind" component={KindPage} exact />
+        <Route path="/hostel" component={HostelPage} exact />
+        <Route path="/apartment" component={ApartmentPage} exact />
+        <Route path="/resort" component={ResortPage} exact />
       </Switch>
     </Router>
   );

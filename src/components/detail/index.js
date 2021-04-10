@@ -3,6 +3,7 @@ import DetailContent from "./detail";
 import detail1 from "../../images/detail1.1.jpg";
 import detail2 from "../../images/detail1.2.jpg";
 import detail3 from "../../images/detail1.3.jpg";
+import detail4 from "../../images/styledhotel1.jpg";
 
 const Details = () => {
   return (

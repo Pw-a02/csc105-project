@@ -35,10 +35,12 @@ export default function MaterialUIPickers() {
           }}
         />
         <KeyboardDatePicker
-          margin="normal"
-          id="date-picker-dialog"
-          label="Checkout"
+          disableToolbar
+          variant="inline"
           format="MM/dd/yyyy"
+          margin="normal"
+          id="date-picker-inline"
+          label="Check-out"
           value={selectedDate}
           onChange={handleDateChange}
           KeyboardButtonProps={{

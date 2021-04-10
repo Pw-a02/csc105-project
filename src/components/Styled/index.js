@@ -1,23 +1,24 @@
 import React from "react";
 import "./styled.css";
+import { Link } from "react-router-dom";
 
-const Styled = ({ img1, price }) => {
+const Styled = ({ img1, price, name }) => {
   return (
-    <div className="type-container">
-      <div className="type-content">
-        <div className="type-pic">
+    <div className="type-content">
+      <div className="type-pic">
+        <Link to="/detail">
           <img src={img1} />
-        </div>
-        <div className="type-content">
-          <label>Entire Hotel</label>
-          <h2>Hug you Hotel</h2>
-          <label>3 guests. 1bedroom. 1bed. 1bath</label>
-          <label>Wifi. Air conditioning. Car park. Pool. Breakfast </label>
-          <h3>
-            {price}
-            <p>/night</p>
-          </h3>
-        </div>
+        </Link>
+      </div>
+      <div className="type-text">
+        <p>Entire Hotel</p>
+        <h2>{name}</h2>
+        <p>3 guests. 1bedroom. 1bed. 1bath</p>
+        <p>Wifi. Air conditioning. Car park. Pool. Breakfast </p>
+        <h3>
+          {price}
+          <p>/night</p>
+        </h3>
       </div>
     </div>
   );

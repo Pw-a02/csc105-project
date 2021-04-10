@@ -1,3 +1,50 @@
-.type-container {
-  width: 100%;
+.type-content {
+  width: 80%;
+  height: 300px;
+  border: none;
+  box-shadow: 0 1px 3px rgb(187, 187, 187);
+  border-radius: 16px;
+  margin: 40px;
+  display: flex;
+}
+
+.type-pic {
+  width: 300px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.type-content img {
+  width: 280px;
+  height: 200px;
+  border-radius: 12px;
+}
+
+.type-text {
+  width: 700px;
+  height: 250px;
+  margin-left: 20px;
+  flex-direction: column;
+  margin-top: 70px;
+  line-height: 1.5;
+}
+
+.type-text p {
+  font-size: 16px;
+}
+
+.type-text h2 {
+  font-size: 20px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-weight: 600;
+}
+
+.type-text h3 {
+  font-weight: 600;
+  font-size: 18px;
 }

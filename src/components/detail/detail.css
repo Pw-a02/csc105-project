@@ -122,12 +122,18 @@
   margin-top: 20px; */
   background-color: white;
   box-shadow: 0 1px 3px rgb(187, 187, 187);
+  outline: none;
+  position: relative;
 }
 
 .Detail-btn button:hover {
   background-color: #ff9a10;
   color: white;
   cursor: pointer;
+}
+
+.Detail-btn button:active {
+  top: 1px;
 }
 
 .Detail-btn {

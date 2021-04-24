@@ -18,7 +18,7 @@ const Compare = ({ name, img, price, detail, option }) => {
       </div>
       <div className="compare-btn">
         <Link to="#">
-          <button>Booking</button>
+          <button>Reserve</button>
         </Link>
       </div>
     </div>

@@ -13,7 +13,14 @@ function Navbar() {
           {/* <a href="/type">Type</a>
           <a href="/booking">Booking</a> */}
           <a href="/compare">Compare</a>
-          <a href="/account">Sign in</a>
+          <div class="dropdown">
+            <a class="dropbtn">Account</a>
+            <div class="dropdown-content">
+              <a href="/account">Signin</a>
+              <a href="/signup">Sign up</a>
+              <a href="#">account</a>
+            </div>
+          </div>
         </div>
         <button onClick={() => setShowLink(!showLink)}>
           <ReorderIcon />

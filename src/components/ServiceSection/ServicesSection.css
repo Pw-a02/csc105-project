@@ -115,11 +115,17 @@ h2 {
   margin-top: 20px;
   background-color: white;
   box-shadow: 0 1px 3px rgb(187, 187, 187);
+  outline: none;
+  position: relative;
 }
 
 .servicebtn button:hover {
   background-color: #ff9a10;
   color: white;
+}
+
+.servicebtn button:active {
+  top: 1px;
 }
 
 .style {

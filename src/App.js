@@ -12,6 +12,7 @@ import HostelPage from "./pages/hostel";
 import ApartmentPage from "./pages/apartment";
 import ResortContent from "./pages/resort";
 import ResortPage from "./pages/resort";
+import SignupPage from "./pages/signup";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/hostel" component={HostelPage} exact />
         <Route path="/apartment" component={ApartmentPage} exact />
         <Route path="/resort" component={ResortPage} exact />
+        <Route path="/signup" component={SignupPage} exact />
       </Switch>
     </Router>
   );

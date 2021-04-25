@@ -13,6 +13,7 @@ import ApartmentPage from "./pages/apartment";
 import ResortContent from "./pages/resort";
 import ResortPage from "./pages/resort";
 import SignupPage from "./pages/signup";
+import ProfilePage from "./pages/profil";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/apartment" component={ApartmentPage} exact />
         <Route path="/resort" component={ResortPage} exact />
         <Route path="/signup" component={SignupPage} exact />
+        <Route path="/profile" component={ProfilePage} exact />
       </Switch>
     </Router>
   );

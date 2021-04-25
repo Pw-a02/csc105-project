@@ -10,6 +10,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: 1600px 692px;
+  background-image: url(../../images/signuppic2.jpg);
 }
 
 .line {
@@ -32,6 +36,7 @@
   border-radius: 4px;
   border: none;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  opacity: 0.8;
 }
 
 .formname {
@@ -42,8 +47,8 @@
   margin-left: 60px;
 }
 
-input[type="text"],
-input[type="password"] {
+.signup-form input[type="text"],
+.signup-form input[type="password"] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -54,7 +59,7 @@ input[type="password"] {
 
 .signup-form p {
   text-align: center;
-  color: rgb(204, 201, 201);
+  color: rgb(161, 158, 158);
 }
 
 .signup-btn button {
@@ -62,6 +67,7 @@ input[type="password"] {
   height: 40px;
   border: none;
   background-color: rgb(117, 193, 228);
+  position: relative;
 }
 
 .signup-btn {

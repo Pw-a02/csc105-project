@@ -18,7 +18,7 @@ function Navbar() {
             <div class="dropdown-content">
               <a href="/account">Signin</a>
               <a href="/signup">Sign up</a>
-              <a href="#">account</a>
+              <a href="/profile">profile</a>
             </div>
           </div>
         </div>

@@ -100,7 +100,8 @@
 .rightside input {
   width: 420px;
   height: 36px;
-  border: 2px solid black;
+  border: none;
+  background: #f1f1f1;
   border-radius: 20px;
   font-size: 20px;
   padding-left: 15px;

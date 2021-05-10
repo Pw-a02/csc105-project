@@ -17,11 +17,6 @@ import {
   TypeWrapper,
   TypeH1a,
   TypeH1b,
-  TypeBox,
-  TypeImage,
-  TypeText,
-  TypeH2,
-  TypeButton,
 } from "./TypeElements";
 
 const Type = () => {

@@ -17,7 +17,7 @@ const BookingRoom = () => {
         <BookingRoomCheckbox
           img={Type1}
           title="Room 1"
-          checked={selected == 0}
+          checked={selected === 0}
           change={() => setSelected(0)}
         />
       </Grid>
@@ -25,7 +25,7 @@ const BookingRoom = () => {
         <BookingRoomCheckbox
           img={Type2}
           title="Room 2"
-          checked={selected == 1}
+          checked={selected === 1}
           change={() => setSelected(1)}
         />
       </Grid>
@@ -33,7 +33,7 @@ const BookingRoom = () => {
         <BookingRoomCheckbox
           img={Type3}
           title="Room 3"
-          checked={selected == 2}
+          checked={selected === 2}
           change={() => setSelected(2)}
         />
       </Grid>
@@ -41,7 +41,7 @@ const BookingRoom = () => {
         <BookingRoomCheckbox
           img={Type4}
           title="Room 4"
-          checked={selected == 3}
+          checked={selected === 3}
           change={() => setSelected(3)}
         />
       </Grid>
@@ -49,7 +49,7 @@ const BookingRoom = () => {
         <BookingRoomCheckbox
           img={Type5}
           title="Room 5"
-          checked={selected == 4}
+          checked={selected === 4}
           change={() => setSelected(4)}
         />
       </Grid>
@@ -57,7 +57,7 @@ const BookingRoom = () => {
         <BookingRoomCheckbox
           img={Type6}
           title="Room 6"
-          checked={selected == 5}
+          checked={selected === 5}
           change={() => setSelected(5)}
         />
       </Grid>

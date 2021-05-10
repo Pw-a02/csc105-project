@@ -10,7 +10,7 @@ import DetailPage from "./pages/details";
 import KindPage from "./pages/kind";
 import HostelPage from "./pages/hostel";
 import ApartmentPage from "./pages/apartment";
-import ResortContent from "./pages/resort";
+
 import ResortPage from "./pages/resort";
 import SignupPage from "./pages/signup";
 import ProfilePage from "./pages/profil";

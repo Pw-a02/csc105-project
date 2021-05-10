@@ -14,24 +14,7 @@ import {
 } from "@material-ui/core";
 import React, { useState } from "react";
 import BookingDate from "./BookingDate";
-import {
-  BookingContainer,
-  BookingLeftSide,
-  BookingLeft1,
-  BookingH2,
-  BookingImage,
-  BookingLeft2,
-  BookingMapH2,
-  BookingMap,
-  BookingRightSide,
-  BookingRight1,
-  BookingBox1,
-  BookingBox2,
-  BookingButton,
-  BookingRight2,
-  BookingNearH2,
-  BookingNear,
-} from "./BookingElements";
+import { BookingContainer } from "./BookingElements";
 import BookingRoom from "./BookingRoom";
 import BookingType from "./BookingType";
 

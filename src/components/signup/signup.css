@@ -4,9 +4,10 @@
 }
 
 .signup-container {
-  height: 692px;
+  height: 680px;
   width: 100%;
-  position: fixed;
+  margin-bottom: 10px;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,6 +42,7 @@
 
 .formname {
   display: flex;
+  justify-content: space-between;
 }
 
 .last {

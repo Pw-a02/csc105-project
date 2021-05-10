@@ -1,9 +1,9 @@
 import React from "react";
 import com1 from "../../images/comparehotel.jpg";
 import com2 from "../../images/comparehotel1.jpg";
-import { Link } from "react-router-dom";
+
 import "./compare.css";
-import Map from "./api";
+
 import CompareContent from "./compare";
 
 const Compare = () => {

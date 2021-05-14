@@ -26,7 +26,7 @@ function App() {
         <Route path="/type" component={TypePage} exact />
         <Route path="/booking" component={Booking} exact />
         <Route path="/compare" component={Compare} exact />
-        <Route path="/detail:placeId" component={DetailPage} exact />
+        <Route path="/detail/:placeId" component={DetailPage} exact />
         <Route path="/kind" component={KindPage} exact />
         <Route path="/hostel" component={HostelPage} exact />
         <Route path="/apartment" component={ApartmentPage} exact />

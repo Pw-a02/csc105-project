@@ -7,7 +7,8 @@ import { useLocation, useParams } from "react-router-dom";
 import detail4 from "../../images/styledhotel1.jpg";
 import axios from "axios";
 
-const Details = (placeId) => {
+const Details = (props) => {
+  const {placeId} = props;
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -16,7 +17,7 @@ const Details = (placeId) => {
       .get(`http://localhost:8080/auth/Placepage/${placeId}`)
       .then((response) => {
         console.log("response", response.data);
-        setData(response.data.Placepage);
+        setData(response.data.place);
       })
       .catch((error) => {
         console.log(error);

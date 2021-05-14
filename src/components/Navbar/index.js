@@ -16,9 +16,10 @@ function Navbar() {
           <div class="dropdown">
             <a class="dropbtn">Account</a>
             <div class="dropdown-content">
-              <a href="/account">Signin</a>
-              <a href="/signup">Sign up</a>
               <a href="/profile">profile</a>
+              <a href="/account">login</a>
+              <a href="/signup">Sign up</a>
+              <a href="#">log out</a>
             </div>
           </div>
         </div>

@@ -11,6 +11,7 @@
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   position: sticky;
+  z-index: 1;
   box-shadow: 0 1px 3px rgb(221, 217, 217);
 }
 

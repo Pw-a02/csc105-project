@@ -10,12 +10,20 @@ import {
 
 export default function MaterialUIPickers() {
   // The first commit of Material-UI
-  const [selectedDate, setSelectedDate] = React.useState(
+  const [selectedCheckinDate, setSelectedCheckinDate] = React.useState(
     new Date("2014-08-18T21:11:54")
   );
 
-  const handleDateChange = (date) => {
-    setSelectedDate(date);
+  const [selectedCheckoutDate, setSelectedCheckoutDate] = React.useState(
+    new Date("2014-08-18T21:11:54")
+  );
+
+  const handleCheckinDateChange = (date) => {
+    setSelectedCheckinDate(date);
+  };
+
+  const handleCheckoutDateChange = (date) => {
+    setSelectedCheckoutDate(date);
   };
 
   return (
@@ -28,8 +36,8 @@ export default function MaterialUIPickers() {
           margin="normal"
           id="date-picker-inline"
           label="Check-in"
-          value={selectedDate}
-          onChange={handleDateChange}
+          value={selectedCheckinDate}
+          onChange={handleCheckinDateChange}
           KeyboardButtonProps={{
             "aria-label": "change date",
           }}
@@ -41,8 +49,8 @@ export default function MaterialUIPickers() {
           margin="normal"
           id="date-picker-inline"
           label="Check-out"
-          value={selectedDate}
-          onChange={handleDateChange}
+          value={selectedCheckoutDate}
+          onChange={handleCheckoutDateChange}
           KeyboardButtonProps={{
             "aria-label": "change date",
           }}

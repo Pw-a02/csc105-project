@@ -54,6 +54,7 @@ export default function ControlledOpenSelect() {
           <MenuItem value={10}>1</MenuItem>
           <MenuItem value={20}>2</MenuItem>
           <MenuItem value={30}>3</MenuItem>
+          <MenuItem value={30}>4</MenuItem>
         </Select>
       </FormControl>
     </div>

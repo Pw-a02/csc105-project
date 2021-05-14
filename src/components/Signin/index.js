@@ -35,8 +35,10 @@ const Signin = () => {
       })
       .then((response) => {
         if (response.data.isLogin) {
+          alert("Signin success");
           console.log(response.data);
-        } else if (!response.data.isSignup) {
+          window.location.href = "/";
+        } else if (!response.data.isLogin) {
           console.log(response.data);
         } else {
           console.log(response.data);
@@ -59,7 +61,7 @@ const Signin = () => {
               <FormInput type="email" onChange={emailChange} required />
               <FormLabel htmlFor="for">Password</FormLabel>
               <FormInput type="password" onChange={passwordChange} required />
-              <FormButton type="submit" onChange={handleSubmit}>
+              <FormButton type="submit" onClick={handleSubmit}>
                 Continue
               </FormButton>
               <Text>

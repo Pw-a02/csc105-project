@@ -18,25 +18,12 @@ import pica from "../../images/detailhostel1.jpg";
 import picb from "../../images/detailhostel2.jpg";
 import picc from "../../images/detailhostel3.jpg";
 
-const DetailContent = ({ name, location, price }) => {
-  console.log("detail", name, location, price);
+const DetailContent = ({ name, location, price, placeId }) => {
+  console.log("detail", name, location, price, placeId);
 
   // const handleFav = () => {
   //   axios
   //     .post("http://localhost:8080/auth/favourite", {
-  //       // placeId: placeId,
-  //     })
-  //     .then((response) => {
-  //       console.log(response.data);
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // };
-
-  // const handleReserve = () => {
-  //   axios
-  //     .post("http://localhost:8080/auth/reserve", {
   //       Place_ID: placeId,
   //     })
   //     .then((response) => {
@@ -46,6 +33,19 @@ const DetailContent = ({ name, location, price }) => {
   //       console.log(error);
   //     });
   // };
+
+  const handleReserve = () => {
+    axios
+      .post("http://localhost:8080/auth/reserve", {
+        Place_ID: placeId,
+      })
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
   return (
     <div className="Detail-content">
       <h2>{name}</h2>
@@ -95,23 +95,30 @@ const DetailContent = ({ name, location, price }) => {
             </div> */}
         </div>
         <div className="mapp">
-          <h3>Location</h3>
-          <span>{location}</span>
+          <h2>
+            Location: <h3>{location}</h3>
+          </h2>
         </div>
       </div>
       <div className="box-2">
-        <h3>{price}/night</h3>
-        <SelectDate />
-        <SelectGuest />
+        <div className="price">
+          <h2>{price}/night</h2>
+        </div>
+
+        <div className="date">
+          <SelectDate />
+          <SelectGuest />
+        </div>
+
         <div className="btn-tools">
           <div className="Detail-btn">
             <Link to="#">
-              {/* <button onClick={handleReserve}>Reserve</button> */}
+              <button onClick={handleReserve}>Reserve</button>
             </Link>
           </div>
           <div>
             {/* <Tooltip title="save">
-              <IconButton type="button" aria-label="delete" onClick={}>
+              <IconButton type="button" aria-label="delete" onClick={handleFav}>
                 <FavoriteBorderIcon />
               </IconButton>
             </Tooltip> */}

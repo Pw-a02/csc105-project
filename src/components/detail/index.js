@@ -8,7 +8,7 @@ import detail4 from "../../images/styledhotel1.jpg";
 import axios from "axios";
 
 const Details = (props) => {
-  const {placeId} = props;
+  const { placeId } = props;
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -35,7 +35,8 @@ const Details = (props) => {
           img={detail1}
           img1={detail2}
           img2={detail3}
-          price={999}
+          price={data.price}
+          location={data.location}
           typeroom="Hotel"
           maxguest="Max 4 guests"
           detailroom="Bedroom"

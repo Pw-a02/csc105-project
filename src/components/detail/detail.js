@@ -13,31 +13,34 @@ import SelectGuest from "./guest";
 import IconButton from "@material-ui/core/IconButton";
 import Tooltip from "@material-ui/core/Tooltip";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
-import axios from "axios";
+import axios from "../../axios";
 import pica from "../../images/detailhostel1.jpg";
 import picb from "../../images/detailhostel2.jpg";
 import picc from "../../images/detailhostel3.jpg";
 
-const DetailContent = ({ name, location, price, placeId }) => {
-  console.log("detail", name, location, price, placeId);
+const DetailContent = ({ name, location, price }) => {
+  console.log("detail", name, location, price);
 
-  // const handleFav = () => {
-  //   axios
-  //     .post("http://localhost:8080/auth/favourite", {
-  //       Place_ID: placeId,
-  //     })
-  //     .then((response) => {
-  //       console.log(response.data);
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // };
+  const { placeId } = useParams();
+  console.log("id", placeId);
+
+  const handleFav = () => {
+    axios
+      .post("/auth/favourite", {
+        placeId: placeId,
+      })
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
 
   const handleReserve = () => {
     axios
-      .post("http://localhost:8080/auth/reserve", {
-        Place_ID: placeId,
+      .post("/auth/reserve", {
+        placeId: placeId,
       })
       .then((response) => {
         console.log(response.data);
@@ -117,11 +120,11 @@ const DetailContent = ({ name, location, price, placeId }) => {
             </Link>
           </div>
           <div>
-            {/* <Tooltip title="save">
+            <Tooltip title="save">
               <IconButton type="button" aria-label="delete" onClick={handleFav}>
                 <FavoriteBorderIcon />
               </IconButton>
-            </Tooltip> */}
+            </Tooltip>
           </div>
         </div>
       </div>

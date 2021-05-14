@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useCookies } from "react-cookie";
 import {
   Container,
   FormWrap,
@@ -11,13 +12,13 @@ import {
   FormButton,
   Text,
 } from "./SigninElements";
-import axios from "axios";
+import axios from "../../axios";
 
 const Signin = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const [cookies, setCookie, removeCookie] = useCookies(["jwt"]);
   const emailChange = (event) => {
     console.log(event.target.value);
     setEmail(event.target.value);
@@ -29,7 +30,7 @@ const Signin = () => {
 
   const handleSubmit = () => {
     axios
-      .post("http://localhost:8080/auth/login", {
+      .post("/auth/login", {
         email: email,
         password: password,
       })
